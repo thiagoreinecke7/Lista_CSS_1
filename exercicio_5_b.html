@@ -6,17 +6,33 @@
     <title>Ex 5.B</title>
 
     <style>
-        p{
-            font-size: 25px;
-            text-align: center;
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(104, 105, 105);
+        }
+        .fundo{
+            width: 650px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px;
+            background-color: white;
+            text-align: justify;
+            padding: 1% 7%;
+        }
+        p{  
+            text-align:justify;
         }
         #container{
             display: flex;
-            width: 100%;
+            width: 100vw;
             height: 225px;
         }
         .box{
-            position: absolute;
+            flex: 1;
             width: 25%;
             line-height: 225px;
             text-align: center;
@@ -26,19 +42,19 @@
 
         #container div:nth-child(1){
             background-color: blue;
-            left: 0;
+            
         }
         #container div:nth-child(2){
             background-color: green;
-            left: 25%;
+            
         }
         #container div:nth-child(3){
             background-color: red;
-            left: 50%;
+            
         }
         #container div:nth-child(4){
             background-color: yellow;
-            left: 75%;
+            
         }
     </style>
 
@@ -50,8 +66,33 @@
         <div class="box">3</div>
         <div class="box">4</div>
     </div>
-    <div>
-        <p>Para voltar a <b>lista de atividades</b> clique <a href="https://thiagoreinecke7.github.io/Lista_CSS_1/"><b>aqui</b></a>.</p>
+    <br>
+    
+    <div class="fundo">
+        <br>
+        <hr>
+        <br>
+        <div>
+            <p style="text-indent: 47px;;">O código cria quatro &ltdiv&gt numeradas de 1 a 4, cada uma com uma cor diferente, e as exibe lado a lado dentro do "id" #container.</p>
+            <br>
+
+            <ol type="1">
+                <li><b>display: flex; no #container</b> Organiza as .box lado a lado;</li>
+                <li><b>Cada .box com flex: 1; </b> Distribui as quatro div igualmente (cada uma com 25% da largura da tela)</li>
+                <li><b>Altura fixa de 225px; </b> O #container e as div possuem esta altura;</li>
+                <li><b>line-height: 225px;</b> Centraliza o texto verticalmente.</li>
+                <li><b>nth-child(); </b> seleção de cada div para que receba um determinado estilo.</li>
+            </ol>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <br>
+            <p style="text-align: center;">Para voltar a <b>lista de atividades</b> clique <a href="https://thiagoreinecke7.github.io/Lista_CSS_1/"><b>aqui</b></a>.</p>
+            <br>
+        </div>
+        <hr>
+        <br>
     </div>
 </body>
 </html>

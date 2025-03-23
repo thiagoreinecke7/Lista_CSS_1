@@ -6,37 +6,51 @@
     <title>Ex 5.A</title>
 
     <style>
+        body{
+            background-color: rgb(104, 105, 105);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .fundo{
+            width: 650px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px;
+            background-color: white;
+            text-align: justify;
+            padding: 1% 7%;
+        }
         p{
-            font-size: 25px;
-            text-align: center;
+            text-align: justify;
         }
         #container{
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            left: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
         }
         .box{
+            width: 100%;
+            flex: 1;
             text-align: center;
             line-height: 160px;
+            line-height: 25vh;
             font-size: 50px;
-            height: 25%;
         }
-        div:nth-child(1){
+        #container div:nth-child(1){
             background-color: blue;
-            top: 0;
         }
-        div:nth-child(2){
+        #container div:nth-child(2){
             background-color: green;
-            top: 25%;
         }
-        div:nth-child(3){
+        #container div:nth-child(3){
             background-color: red;
-            top: 50%;
         }
-        div:nth-child(4){
+        #container div:nth-child(4){
             background-color: yellow;
-            top: 75%;
         }
 
     </style>
@@ -44,14 +58,43 @@
 </head>
 <body>
     <div id="container">
-        <div class="box">1</div>
+        <div class="box">1 - Explicação abaixo</div>
         <div class="box">2</div>
         <div class="box">3</div>
         <div class="box">4</div>
+    </div>
+    <br>
+    <div class="fundo">
+        <br>
+        <hr>
+        <br>
+        <h1>Explicação da Atividade A exercício 5</h1>
+        <br>
+        <hr>
+        <br>
+        <p style="text-indent: 47px;">Este código cria uma página com 4 caixas coloridas (divs) dispostas uma embaixo da outra. Cada caixa tem uma cor e ocupa 25% da altura da tela.</p>
+        <br>
+
+        <ol type="1">
+            <li><b>margin: 0; , padding: 0;</b> Remove o espaçamento (margem e preenchimento) padrão de todos os elementos na página.</li>
+            <li><b>box-sizing: border-box;</b> Faz com que o cálculo da largura e altura de um elemento inclua também o preenchimento e as bordas.</li>
+            <li><b>display: flex;</b> Define que o #container vai usar o modelo de layout Flexbox.</li>
+            <li><b>flex-direction: column; </b>Faz com que as div.box dentro do #container sejam organizadas verticalmente (uma abaixo da outra).</li>
+            <li><b>height: 100vh; e width: 100vw;</b> Faz com que o #container ocupe 100% da altura e largura da tela.</li>
+            <li><b>width: 100%;</b> Faz com que cada caixa ocupe 100% da largura do #container.</li>
+            <li><b>flex: 1;</b> Faz com que cada div dentro de #container tenha a mesma altura proporcionalmente. Como cada uma ocupa 25% da altura, elas se distribuem igualmente no #container.</li>
+            <li><b>line-height: 25vh;</b> Define a altura da linha de cada div como 25% da altura da tela, o que ajuda a centralizar verticalmente o texto dentro de cada caixa.</li>
+        </ol>
+        <br>
+
+        <hr>
+        <br>
         <div>
-            <p>Para voltar a <b>lista de atividades</b> clique <a href="https://thiagoreinecke7.github.io/Lista_CSS_1/"><b>aqui</b></a>.</p>
-            <br>
+            <p style="text-align: center;">Para voltar a <b>lista de atividades</b> clique <a href="https://thiagoreinecke7.github.io/Lista_CSS_1/"><b>aqui</b></a>.</p>
         </div>
+        <br>
+        <hr>
+        <br>
     </div>
 </body>
 </html>
