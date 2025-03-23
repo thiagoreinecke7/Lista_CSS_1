@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>   
+   <title>Exemplo especificidade de seletores</title>
+   <link rel="stylesheet" href="style.CSS">
+   <style>
+      /*regra 1*/ li{color:red;} 
+      /*regra 2*/ .churras{color:green;}
+      /*regra 3*/ .fruta{color:gray}
+      /*regra 4*/ li+li.churras{color: black;}
+      /*regra 5*/ .churras[draggable="true"]{color: magenta;}
+      /*regra 6*/ #lip1,#lip2,#lip3{color:blue}
+      /*regra 7*/ #lip3.fruta{color:orange}
+      /*regra 8*/ ol>li.churras#lip5{color:purple}
+
+        #projetado{
+            border: solid 2px black;
+            border-radius: 10px;
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+        .coluna{
+            padding: 0 0 0 35px;
+            display: inline-block;
+            width: 250px;
+        }
+        #trecho{
+            width: 90%;
+        }
+   </style>
+</head>
+<body>
+    <div class="fundo">
+        <hr>
+        <h1>Analisando Trecho de Código HTML e CSS</h1>
+        <hr>
+        <h3>Trecho de Código Informado</h3>
+        <img id="trecho" src="imagens/trecho_codigo.JPG" alt="trecho_codigo">
+
+        <h3>Projeção</h3>
+        <div id="projetado">
+            <ol>
+                <div class="coluna">
+                    <!--item 1--> <li id="lip0">Abacaxi</li>
+                    <!--item 2--> <li           class="fruta">Melão</li>
+                    <!--item 3--> <li id="lip2" class="fruta">Pera</li>
+                    <!--item 4--> <li id="lip3" class="fruta">Uva</li>
+                </div>
+                <div class="coluna">
+                    <!--item 5--> <li id="lip4" class="fruta">Maçã</li>
+                    <!--item 6--> <li           class="churras">Carne</li>
+                    <!--item 7--> <li           class="churras">Linguiça</li>
+                    <!--item 8--> <li id="lip7" class="churras" draggable="true">Pão de alho</li>
+                </div>
+            </ol>  
+        </div>
+        
+        <br>
+        <h3>Explicação das Regras</h3>
+        <dl>
+            <dt><b>Regra 1:</b>
+                <dd>Define a cor vermelha para todas as linhas da lista ordenada, ou seja, itens de 1 a 8.</dd>
+            </dt>
+            <dt><b>Regra 2:</b>
+                <dd>Define a cor verde para todas as linhas categorizadas pela classe "churras". Mudando os itens 6, 7 e 8 para verde.</dd>
+            </dt>
+            <dt><b>Regra 3:</b>
+                <dd>Define a cor cinza para todas as linhas categorizadas pela classe "fruta". Mudando os itens 2, 3, 4 e 5 para cinza.</dd>
+            </dt>
+            <dt><b>Regra 4:</b>
+                <dd>Define a cor preta para todos os elementos "li" categorizados com a classe "churras" que seguem diretamente um "li". Mudando os items 6, 7 e 8 de verde para preto.</dd>
+            </dt>
+            <dt><b>Regra 5:</b>
+                <dd>Define a cor magenta para todos os elementos "li" categorizados pela classe "churras" e que possuem atributo "draggable="true". Mudando o item 8 de preto para magenta. O atributo "draggable="true" permite que o elemento seja arastável pelo usuário.</dd>
+            </dt>
+            <dt><b>Regra 6:</b>
+                <dd>Define a cor azul para os elementos categorizados pelo "id" lip1, lip2 e lip3. Mudando os itens 3 e 4 de cinza para azul. lip1 não definido em nenhum item. </dd>
+            </dt>
+            <dt><b>Regra 7:</b>
+                <dd>Define a cor laranja para todos os elementos categorizados pela classe "fruta" com o "id" lip3. Mudando o item 4 de azul para laranja.</dd>
+            </dt>
+            <dt><b>Regra 8:</b>
+                <dd>Define a cor roxa para o elemento "li" que é um filho direto de "ol" categorizado pela classe "churras" e que possui o "id" lip5. Não foi definido elementos com id lip5. portanto, nenhum elemento ficou roxo.</dd>
+            </dt>
+        </dl>
+
+        <br>
+        <hr>
+        <br>
+        <div class="fonte_imagem">
+            Para voltar a <b>lista de atividades</b> clique <a href="https://thiagoreinecke7.github.io/Lista_CSS_1/"><b>aqui</b></a>.
+        </div>
+        <br>
+        <hr>
+        <br>
+    </div>
+</body>
+</html>
