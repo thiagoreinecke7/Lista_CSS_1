@@ -10,7 +10,7 @@ body{
     text-align: justify;
     padding: 1% 7%;
 }
-h1, h5, h3, div.fonte_imagem{
+h1, h5, div.fonte_imagem{
     text-align: center;
 }
 p{
@@ -25,3 +25,7 @@ img{
     color: red;
     font-size: 20px;
 }
+.css_styles{
+    max-width: 95%;
+}
+

@@ -4,10 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Incluindo CSS</title>
-
+    <link rel="stylesheet" href="style.CSS">
     
 </head>
 <body>
-    
+    <div class="fundo">
+        <br>
+        <hr>
+        <h1>Incluindo CSS em Documentos HTML</h1>
+        <hr>
+        <br>
+        <p>De acordo com W3schools (2025), existem três maneiras de inserir uma "Style Sheet". São eles:</p>
+        <ul>
+            <li>CSS Externo;</li>
+            <li>CSS Interno;</li>
+            <li>CSS Embutido;</li>
+        </ul>
+
+        <h3>CSS Externo</h3>
+        <p>W3schools (2025), com uma "Style Sheet" externa, é possível alterar a aparência de um site inteiro alterando apenas um arquivo. Cada página HTML deve incluir uma referência ao arquivo CSS externo através da tag &ltlink&gt dentro da seção &lthead&gt conforme demonstrado na figura 1.</p>
+        <div class="fonte_imagem">Figura 1 - Inclusão CSS Externo</div>
+        <img class="css_styles" src="imagens/css_externo.JPG" alt="css_externo">
+        <div class="fonte_imagem">Fonte: Elaboração própria.</div>
+        <p>Uma "Style Sheet" externa pode ser escrita em qualquer editor de texto e deve ser salva com uma extensão .css. O arquivo .css externo não deve conter nenhuma tag HTML.</p>
+
+        <h3>CSS Interno</h3>
+        <p>Uma "Style Sheet" interna pode ser usada se uma única página HTML tiver um estilo exclusivo. O estilo interno é definido dentro do elemento &ltstyle&gt, dentro do cabeçalho secção &lthead&gt, coforme demonstrado na figura 2.</p>
+        <div class="fonte_imagem">Figura 2 - CSS Interno</div>
+        <img class="css_styles" style="border: solid 1px black;" src="imagens/css_interno.JPG" alt="css_interno">
+        <div class="fonte_imagem">Fonte: Elaboração própria.</div>
+
+        <h3>CSS Embutido</h3>
+        <p>Um estilo embutido pode ser usado para aplicar um estilo exclusivo a um único elemento. Para usar estilos embutidos, adicione o atributo style ao elemento relevante. O style pode conter qualquer propriedade CSS, conforme demonstrado na figura 3.</p>
+        <div class="fonte_imagem">Figura 3 - CSS Embutido</div>
+        <img class="css_styles" style="border: solid 1px black;" src="imagens/css_embutido.JPG" alt="css_embutido">
+        <div class="fonte_imagem">Fonte: Elaboração própria.</div>
+
+        <h3>Utilizando Vários Styles Sheet</h3>
+        <p>Ao utilizar vários Styles Sheets é necessário ter cuidado e se atentar a ordem de procedência. Supondo que um CSS externo tenha o estilo da cor verde para o elemento &lth1&gt e um CSS interno tenha o estilo da cor laranja para o mesmo elemento. Se o CSS interno for definido <strong>após</strong> o link para o CSS externo, os elementos &lth1&gt serão "laranja". Exemplo demonstrado na figura 4.</p>
+        <div class="fonte_imagem">Figura 3 - Ordem de Procedência</div>
+        <img class="css_styles" style="border: solid 1px black;" src="imagens/procedencia.JPG" alt="css_procedencia">
+        <div class="fonte_imagem">Fonte: Elaboração própria.</div>
+
+        <p>No entanto, se o estilo interno for definido <strong>antes</strong> do vínculo com a folha do CSS externa, os elementos &lth1&gt serão "verde". Exemplo demonstrado na figura 4.</p>
+        <div class="fonte_imagem">Figura 4 - Ordem de Procedência</div>
+        <img class="css_styles" style="border: solid 1px black;" src="imagens/procedencia_2.JPG" alt="css_procedencia">
+        <div class="fonte_imagem">Fonte: Elaboração própria.</div>
+
+        <p>É importante lembrar que um estilo embutido tem a prioridade mais alta e substituírá o estilo externo e interno.</p>
+
+        <br>
+        <hr>
+        <br>
+        <div class="Referencias">
+            <h3>Referências Bibliográficas</h3>
+            <ul>
+                <li>W3schools - How to add CSS. 2025. Disponível em: <a href="https://www.w3schools.com/CSS/css_howto.asp">https://www.w3schools.com/CSS/css_howto.asp</a>. Acesso em: 23 mar. 2025.</li>
+               
+                
+            </ul>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="fonte_imagem">
+            Para voltar a <b>lista de atividades</b> clique <a href="https://thiagoreinecke7.github.io/Lista_CSS_1/"><b>aqui</b></a>.
+        </div>
+        <br>
+        <hr>
+        <br>
+
+    </div>
 </body>
 </html>
