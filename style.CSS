@@ -2,14 +2,26 @@ body{
     background-color: rgb(104, 105, 105);
 }
 .fundo{
-    width: 800px;
+    width: 650px;
     margin: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px;
     background-color: white;
     text-align: justify;
-    padding: 20px;
+    padding: 1% 7%;
 }
-h1{
+h1, h5, div.fonte_imagem{
     text-align: center;
+}
+p{
+    text-indent: 47px;
+}
+img{
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+#demonstracao{
+    color: red;
+    font-size: 20px;
 }
